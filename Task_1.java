@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class Main {
+public class Task_1 {
   public static void main(String[] args) {
-    Scanner myObj = new Scanner(System.in);
+    try ( Scanner myObj = new Scanner(System.in)) {
 
     System.out.println("Give share name: ");
     String shareName = myObj.nextLine();
@@ -17,6 +17,6 @@ public class Main {
     
 
     System.out.println("Share " + shareName + " return on capital " + Capital + " is " + ROI);
-
+    }
   }
 }
