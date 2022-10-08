@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="task1.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -10,8 +9,9 @@
 </head>
 
 <body style="display: flex;justify-content: center;height:100vh;">
+
     <div style="align-self: center;">
-        <input type="number" id="radius" placeholder=" Enter Radius ">
+        <input type="number" id="radius" placeholder=" Enter Radius">
         <input type="button" onclick="display()" value="Get Area">
     </div>
 
@@ -23,7 +23,6 @@
             this.area = function() {
                 return Math.PI * this.radius * this.radius;
             };
-
 
         }
 
