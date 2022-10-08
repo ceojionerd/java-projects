@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="task1.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate the area of a circle</title>
+</head>
+
+<body style="display: flex;justify-content: center;height:100vh;">
+    <div style="align-self: center;">
+        <input type="number" id="radius" placeholder=" Enter Radius ">
+        <input type="button" onclick="display()" value="Get Area">
+    </div>
+
+    <script>
+        function circle(radius) {
+            this.radius = radius;
+            // area method
+
+            this.area = function() {
+                return Math.PI * this.radius * this.radius;
+            };
+
+
+        }
+
+        function display() {
+            var rad = document.getElementById("radius");
+
+
+            var c = new circle(rad.value);
+            console.log('Area =', c.area().toFixed(2));
+        }
+    </script>
+</body>
+
+</html>
