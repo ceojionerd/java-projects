@@ -24,11 +24,12 @@
                 return Math.PI * this.radius * this.radius;
             };
 
+
         }
 
         function display() {
             var rad = document.getElementById("radius");
-
+            document.alert('Area =', c.area().toFixed(2))
 
             var c = new circle(rad.value);
             console.log('Area =', c.area().toFixed(2));
