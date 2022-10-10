@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+
+<body>
+    <div id="container">
+        <input type="text" id="date" placeholder="Enter Birth Date: yyyy-mm-dd">
+        <button id="btn" onclick="validate()">Check</button>
+    </div>
+
+    <!-- 5. 
+        Create a html page where user can write birthdate in format "yyyy-mm-dd " in text type input. 
+        Do not use date type input field! When user presses Check-button, program counts and rounds age in years. Round to closest year. Check that the input field
+
+    Is not empty yyyy, 
+    mm and dd are only numbers 
+    Length is correct dd is between 1-31 
+    mm is between 1-12 
+    yyyy is between 1900 and current year 
+    Notice that you don't have to check if date is valid, unless you want to do it. -->
+
+
+    <script>
+        var date = document.getElementById("date");
+
+        function validate() {
+            const data = document.getElementById('date').value;
+            const yr = data.substr(0, 4);
+            const mm = data.substr(5, 2);
+            const dd = data.substr(8, 6);
+            const bd = `${dd}/${mm}/${yr}`;
+
+
+            let day = date.getDate();
+            let month = date.getMonth() + 1;
+            let year = date.getFullYear();
+
+            // This arrangement can be altered based on how we want the date's format to appear.
+            let currentDate = `${day}-${month}-${year}`;
+
+            if ((bd > new date('01/01/1900') && (bd < new date(currentDate)))) {
+                console.log(mm);
+            } else if (year.length === 4) {
+                console.log(year, mm, dd)
+            }
+        }
+    </script>
+</body>
+
+</html>
