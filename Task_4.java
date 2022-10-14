@@ -16,7 +16,7 @@ public class Task_4 {
             int winning = random.nextInt(40) + 1;
             int rand = random.nextInt(40) + 1;
             // add it to list if it is not exist
-            if (!winningNum.contains(winning) || !winningNum.contains(rand)) {
+            if (!winningNum.contains(winning) && !winningNum.contains(rand)) {
                winningNum.add(winning);
                bonusNum.add(rand);
                break;
@@ -68,7 +68,7 @@ public class Task_4 {
       System.out.println("Main Numbers Correct: " + usrGuess.size());
 
       bonusGuess.retainAll(bonusNum);
-      System.out.println("Bonus Numbers Correct: " + usrGuess.size());
+      System.out.println("Bonus Numbers Correct: " + bonusGuess.size());
 
       if (usrGuess.containsAll(winningNum)) {
          System.out.println("Holy crap, you actually won. " +
