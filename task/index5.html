@@ -35,16 +35,17 @@
             const mm = data.substr(5, 2);
             const dd = data.substr(8, 6);
             const bd = `${dd}/${mm}/${yr}`;
+            console.log(bd);
+            const ate = new Date();
 
-
-            let day = date.getDate();
-            let month = date.getMonth() + 1;
-            let year = date.getFullYear();
+            let day = ate.getDate();
+            let month = ate.getMonth() + 1;
+            let year = ate.getFullYear();
 
             // This arrangement can be altered based on how we want the date's format to appear.
-            let currentDate = `${day}-${month}-${year}`;
+            let currentDate = `${day}/${month}/${year}`;
 
-            if ((bd > new date('01/01/1900') && (bd < new date(currentDate)))) {
+            if ((bd > new date('01/01/1900'))) {
                 console.log(mm);
             } else if (year.length === 4) {
                 console.log(year, mm, dd)

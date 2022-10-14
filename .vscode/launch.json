@@ -1,35 +1,42 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Launch Task_3",
-            "request": "launch",
-            "mainClass": "Task_3",
-            "projectName": "java projects_8d7f2abc"
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Launch Task_1",
-            "request": "launch",
-            "mainClass": "Task_1",
-            "projectName": "java projects_8d7f2abc"
-        },
-        {
-            "type": "java",
-            "name": "Launch Task_2",
-            "request": "launch",
-            "mainClass": "Task_2",
-            "projectName": "java projects_8d7f2abc"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Task_4",
+      "request": "launch",
+      "mainClass": "Task_4",
+      "projectName": "java projects_8d7f2abc"
+    },
+    {
+      "type": "java",
+      "name": "Launch Task_3",
+      "request": "launch",
+      "mainClass": "Task_3",
+      "projectName": "java projects_8d7f2abc"
+    },
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Launch Task_1",
+      "request": "launch",
+      "mainClass": "Task_1",
+      "projectName": "java projects_8d7f2abc"
+    },
+    {
+      "type": "java",
+      "name": "Launch Task_2",
+      "request": "launch",
+      "mainClass": "Task_2",
+      "projectName": "java projects_8d7f2abc"
+    }
+  ]
 }
